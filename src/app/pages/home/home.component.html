@@ -1,11 +1,24 @@
-<po-toolbar p-title="PO Toolbar"></po-toolbar>
+<po-toolbar
+  [p-actions]="[{ label: 'Português (Brasil)' }, { label: 'English (US)' }]"
+  p-actions-icon="po-icon-world"
+></po-toolbar>
 
 <po-container class="po-xl-2 po-lg-2 po-md-2 po-sm-2">
   <div class="po-row">
-    <po-input class="po-xl-12 po-lg-12 po-md-12 po-sm-12" name="input"></po-input>
+    <po-input class="po-xl-12 po-lg-12 po-md-12 po-sm-12" name="input" p-placeholder="PIN da planning"></po-input>
   </div>
 
   <div class="po-row">
-    <po-button class="po-xl-12 po-lg-12 po-md-12 po-sm-12" p-label="PO Button"> </po-button>
+    <po-button class="po-xl-12 po-lg-12 po-md-12 po-sm-12" p-label="Participar"> </po-button>
   </div>
+
+  <div class="other">
+    <p>Ou</p>
+  </div>
+
+  <po-button class="po-xl-12 po-lg-12 po-md-12 po-sm-12" p-label="Criar"> </po-button>
 </po-container>
+
+<div class="footer">
+  <a href="https://po-ui.io">Made with PO UI ❤️</a>
+</div>
